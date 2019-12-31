@@ -1,13 +1,8 @@
-<h1>Show Topic</h1>
+<h5><%= @topic.title %></h5>
 
-<ul>
-
-  <li>
-    <strong>Title:</strong>
-    <%= @topic.title %>
-  </li>
-
-</ul>
-
-<span><%= link "Edit", to: Routes.topic_path(@conn, :edit, @topic) %></span>
-<span><%= link "Back", to: Routes.topic_path(@conn, :index) %></span>
+<div class="input-field">
+  <textarea class="materialize-textarea"></textarea>
+  <button class"btn">Add Comment</button>
+  <ul class="collection">
+  <ul>
+</div>

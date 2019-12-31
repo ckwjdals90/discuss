@@ -9,6 +9,7 @@ defmodule Discuss.Auth.User do
     field :provider, :string
     field :token, :string
     has_many :topic, Discuss.Posts.Topic
+    has_many :comment, Discuss.Posts.Comment
 
     timestamps()
   end
