@@ -2,7 +2,7 @@ defmodule DiscussWeb.UserSocket do
   use Phoenix.Socket
 
   ## Channels
-  # channel "room:*", DiscussWeb.RoomChannel
+  channel "comments:*", DiscussWeb.CommentChannel
 
   # Socket params are passed from the client and can
   # be used to verify and authenticate a user. After
