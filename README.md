@@ -1,5 +1,10 @@
 # Discuss
 
+This is a course project from [The Complete Elixir and Phoenix
+Bootcamp](https://www.udemy.com/course/the-complete-elixir-and-phoenix-bootcamp-and-tutorial/) by
+Stephen Grider.
+Unlike the curriculum, the code is written in Elixir 1.9.1 and Phoenix 1.4.11.
+
 To start your Phoenix server:
 
   * Install dependencies with `mix deps.get`
