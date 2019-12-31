@@ -15,9 +15,10 @@ defmodule DiscussWeb.CommentChannel do
 
   def handle_in(name, %{"content" => content}, socket) do
     topic = socket.assigns.topic
+    user_id = socket.assigns.user_id
 
     changeset = topic
-      |> Ecto.build_assoc(:comment)
+      |> Ecto.build_assoc(:comment, user_id: user_id)
       |> Comment.changeset(%{content: content})
 
     case Repo.insert(changeset) do
