@@ -20,7 +20,7 @@ defmodule Discuss.MixProject do
   def application do
     [
       mod: {Discuss.Application, []},
-      extra_applications: [:logger, :runtime_tools, :ueberauth, :ueberauth_github]
+      extra_applications: [:logger, :runtime_tools, :ueberauth, :ueberauth_github, :poison]
     ]
   end
 
@@ -42,6 +42,7 @@ defmodule Discuss.MixProject do
       {:phoenix_live_reload, "~> 1.2", only: :dev},
       {:gettext, "~> 0.11"},
       {:jason, "~> 1.0"},
+      {:poison, "~> 3.1"},
       {:plug_cowboy, "~> 2.0"},
       {:ueberauth, "~> 0.6"},
       {:ueberauth_github, "~> 0.7"}
